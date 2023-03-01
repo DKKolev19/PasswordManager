@@ -1,4 +1,4 @@
-package com.example.PasswordManager;
+package com.example.passwordManager;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -8,7 +8,6 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
 
 @SpringBootApplication
-@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class})
 public class PasswordManagerApplication implements CommandLineRunner {
 
 	public static void main(String[] args) {
@@ -16,7 +15,7 @@ public class PasswordManagerApplication implements CommandLineRunner {
 	}
 
 	@Override
-	public void run(String... args) throws Exception{
+	public void run(String... args) throws Exception {
 		System.out.println("Check");
 	}
 }
